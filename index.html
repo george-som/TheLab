@@ -1,54 +1,28 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" data-ng-app="mi.repair.web" data-ng-controller="mi.repair.web.AppCtrl">
+<!--<html xmlns="http://www.w3.org/1999/xhtml" data-ng-app="mi.repair.web" data-ng-controller="mi.repair.web.AppCtrl">-->
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ng="http://angularjs.org"
+      id="ng-app"
+      data-ng-app="mi.repair.web" data-ng-controller="mi.repair.web.MainCtrl">
+
 <head>
-    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"  charset="utf-8"/>
     <title>AngularJS</title>
     <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/bootstrap-cerulean.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.css">
     <link rel="stylesheet" href="css/app.css">
 </head>
 <body>
-<div data-app-shell></div>
+<div data-mi-shell></div>
 
 <script type="text/javascript" src="libs/jquery/1.10.2/jquery-1.10.2.js"></script>
 <script type="text/javascript" src="libs/bootstrap/3.0.3/bootstrap.js"></script>
-<script type="text/javascript" src="libs/angularjs/1.2.8/angular.js"></script>
-<script type="text/javascript" src="libs/angularjs/1.2.8/angular-animate.js"></script>
-<script type="text/javascript" src="libs/angularjs/1.2.8/angular-route.js"></script>
-<script type="text/javascript" src="app/app.js"></script>
-<script type="text/javascript" src="app/app.controllers.js"></script>
+<script type="text/javascript" src="libs/angularjs/1.2.9/angular.js"></script>
+<script type="text/javascript" src="libs/angularjs/1.2.9/angular-route.js"></script>
+<script type="text/javascript" src="libs/angularjs/1.2.9/angular-animate.js"></script>
+<script type="text/javascript" src="app.js"></script>
 
 <!-- Core Modules -->
-<script type="text/javascript" src="modules/shell/shell.controllers.js"></script>
-<script type="text/javascript" src="modules/shell/shell.directives.js"></script>
-<script type="text/javascript" src="modules/shell/modal.controllers.js"></script>
-<script type="text/javascript" src="modules/shell/modal.directives.js"></script>
-<script type="text/javascript" src="modules/components/checklist/checklist.controllers.js"></script>
-<script type="text/javascript" src="modules/components/checklist/checklist.directives.js"></script>
-<script type="text/javascript" src="modules/components/checklist/checklist-item.controllers.js"></script>
-<script type="text/javascript" src="modules/components/checklist/checklist-item.directives.js"></script>
-<script type="text/javascript" src="modules/components/placemat/placemat.directive.js"></script>
 
-
-
-<!-- App specific modules -->
-<script type="text/javascript" src="app/job-overview/checklist/estimate/estimate-checklist-item.controllers.js"></script>
-<script type="text/javascript" src="app/job-overview/checklist/estimate/add-estimate-box.controller.js"></script>
-
-<script type="text/javascript" src="app/job-overview/checklist/attachments/attachment-checklist-item.controller.js"></script>
-<script type="text/javascript" src="app/job-overview/checklist/attachments/add-attachments-box.controller.js"></script>
-
-<script type="text/javascript" src="app/job-overview/checklist/compliance/compliance-checklist-item.controller.js"></script>
-<script type="text/javascript" src="app/job-overview/checklist/compliance/add-compliance-box.controller.js"></script>
-
-<script type="text/javascript" src="app/job-overview/placemat/estimate-placemat.controller.js"></script>
-<script type="text/javascript" src="app/job-overview/placemat/attachment-placemat.controller.js"></script>
-
-<!-- Services -->
-<script type="text/javascript" src="libs/mi/attachment-service.js"></script>
-<script type="text/javascript" src="libs/mi/compliance-service.js"></script>
-<script type="text/javascript" src="libs/mi/estimate-service.js"></script>
-
-<script type="text/javascript" src="libs/mi/eventAggregator.js"></script>
 </body>
 </html>
