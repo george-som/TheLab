@@ -1,0 +1,107 @@
+<div class="mi-repair-contact-card clearfix"
+     data-ng-controller="mi.repair.web.VehicleCardCtrl"
+     data-ng-click="commands.clickCommand()">
+
+    <!-- Vehicle heading and summary -->
+    <div class="row-fluid">
+        <div class="col-md-12 mi-repair-card-content">
+            <div>
+                <span class="h6">
+                    Vehicle
+                </span>
+            </div>
+            <div>
+                <span class="h4">
+                    {{jobItem.vehicle.year}} {{jobItem.vehicle.make}} {{jobItem.vehicle.model}} {{jobItem.vehicle.subModel}}
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Vehicle Submodel & Color -->
+    <div class="row-fluid">
+        <div class="col-md-12 mi-repair-card-content">
+            <div class="row">
+                <div class="col-md-7">
+                    <div>
+                        <span class="h6">
+                            SUBMODEL
+                        </span>
+                    </div>
+                    <div>
+                        <span>
+                        {{jobItem.vehicle.subModel}} {{jobItem.vehicle.body}}
+                    </span>
+                    </div>
+                </div>
+
+                <div class="col-md-5">
+                    <div>
+                        <span class="h6">
+                            COLOR
+                        </span>
+                    </div>
+                    <div>
+                        <span>
+                        {{jobItem.vehicle.color}}
+                    </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Vehicle Vin & Plate -->
+    <div class="row-fluid">
+        <div class="col-md-12 mi-repair-card-content">
+            <div class="row">
+                <div class="col-md-7">
+                    <div>
+                        <span class="h6">
+                            VIN
+                        </span>
+                    </div>
+                    <div>
+                        <span>
+                        {{jobItem.vehicle.vin}}
+                    </span>
+                    </div>
+                </div>
+
+                <div class="col-md-5">
+                    <div>
+                        <span class="h6">
+                            LICENSE PLATE
+                        </span>
+                    </div>
+                    <div>
+                        <span>
+                        {{jobItem.vehicle.licensePlate}}
+                    </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Condition -->
+    <div class="row-fluid">
+        <div class="col-md-12 mi-repair-card-content">
+            <div class="row">
+                <div class="col-md-8">
+                    <div>
+                        <span class="h6">
+                            CONDITION
+                        </span>
+                    </div>
+                    <div>
+                        <span>
+                            {{jobItem.vehicle.condition}}
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>

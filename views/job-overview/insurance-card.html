@@ -1,0 +1,112 @@
+<div class="mi-repair-contact-card clearfix"
+     data-ng-controller="mi.repair.web.InsuranceCardCtrl"
+     data-ng-click="commands.clickCommand()">
+
+    <!-- Insurance heading and company name -->
+    <div class="row-fluid">
+        <div class="col-md-12 mi-repair-card-content">
+            <div>
+                <span class="h6">
+                    INSURANCE
+                </span>
+            </div>
+            <div>
+                <span class="h4">
+                    {{jobItem.claim.company.name}}
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Insurance Claim and Policy Number -->
+    <div class="row-fluid">
+        <div class="col-md-12 mi-repair-card-content">
+            <div class="row">
+                <div class="col-md-7">
+                    <div>
+                        <span class="h6">
+                            CLAIM
+                        </span>
+                    </div>
+                    <div>
+                        <span>
+                        {{jobItem.claim.claimNumber}}
+                    </span>
+                    </div>
+                </div>
+
+                <div class="col-md-5">
+                    <div>
+                        <span class="h6">
+                            POLICY
+                        </span>
+                    </div>
+                    <div>
+                        <span>
+                            {{jobItem.claim.claimNumber}}
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Adjuster Info & Deductible-->
+    <div class="row-fluid">
+        <div class="col-md-12 mi-repair-card-content">
+            <div class="row">
+                <div class="col-md-7">
+                    <div>
+                        <span class="h6">
+                            ADJUSTER
+                        </span>
+                    </div>
+                    <div>
+                        <span>
+                            {{jobItem.claim.adjuster.firstName}} {{jobItem.claim.adjuster.lastName}}
+                        </span>
+                    </div>
+                    <div>
+                        <span>
+                            {{jobItem.claim.adjuster.phoneNumber}}
+                        </span>
+                    </div>
+                </div>
+
+                <div class="col-md-5">
+                    <div>
+                        <span class="h6">
+                            DEDUCTIBLE
+                        </span>
+                    </div>
+                    <div>
+                        <span>
+                            {{jobItem.claim.total | currency}}
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Condition -->
+    <div class="row-fluid">
+        <div class="col-md-12 mi-repair-card-content">
+            <div class="row">
+                <div class="col-md-12">
+                    <div>
+                        <span class="h6">
+                            {{jobItem.claim.company.name | uppercase}}
+                        </span>
+                    </div>
+                    <div>
+                        <span>
+                            {{jobItem.claim.notes}}
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>

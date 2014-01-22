@@ -1,7 +1,15 @@
+.body {
+    font-family:'Arial Regular', 'Arial';
+    height: 100%;
+}
+
 .side-nav {
     background-color: #515151
 }
 
+.bordered {
+    border: 2px solid #000000;
+}
 
 .view-container {
 
@@ -11,7 +19,14 @@
     background-color: #e4e4e4;
 }
 
+.mi-repair-contact-card {
+    /*color: #ff0000;*/
+    font-size: 13px;
+}
 
+.mi-repair-card-content {
+    margin-bottom: 15px;
+}
 
 
 

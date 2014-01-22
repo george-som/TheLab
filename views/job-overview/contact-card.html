@@ -1,0 +1,63 @@
+<div class="mi-repair-contact-card clearfix"
+     data-ng-controller="mi.repair.web.ContactCardCtrl"
+     data-ng-click="commands.clickCommand()">
+
+    <!-- Insured heading and name -->
+    <div class="row-fluid">
+        <div class="col-md-12 mi-repair-card-content">
+            <div>
+                <span class="h6">
+                    Insured
+                </span>
+            </div>
+            <div>
+                <span class="h4">
+                    {{jobItem.contacts["insured"].firstName}} {{jobItem.contacts["insured"].lastName}}
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Insured contact info -->
+    <div class="row-fluid">
+        <div class="col-md-12 mi-repair-card-content">
+            <div>
+                <span class="h6">
+                    CONTACT
+                </span>
+            </div>
+            <div>
+                <span>
+                    {{jobItem.contacts["insured"].phoneNumber}}
+                </span>
+            </div>
+            <div>
+                <span>
+                    {{jobItem.contacts["insured"].email}}
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Insured address info -->
+    <div class="row-fluid">
+        <div class="col-md-12  mi-repair-card-content">
+            <div>
+                <span class="h6">
+                    ADDRESS
+                </span>
+            </div>
+            <div>
+                <span>
+                    {{jobItem.contacts["insured"].address.street}}
+                </span>
+            </div>
+            <div>
+                <span>
+                    {{jobItem.contacts["insured"].address.city}}, {{jobItem.contacts["insured"].address.state}} {{jobItem.contacts["insured"].address.zip}}
+                </span>
+            </div>
+        </div>
+    </div>
+
+</div>
