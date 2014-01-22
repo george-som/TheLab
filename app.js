@@ -1,4 +1,6 @@
 (function(ng) {
+    "use strict";
+
     ng.module("mi.repair.web", ['ngRoute', 'ngAnimate'])
         .config(["$routeProvider", "$locationProvider",
             function($routeProvider, $locationProvider) {
